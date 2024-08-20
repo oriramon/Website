@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ori's Photography Portfolio</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- my styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <menu id="menu2">
+        <div class="mcontainer2">
+            <div class="menu-content2">
+                <div>
+                    <ul class="bar2">
+                        <li><a href="index.html">ABOUT</a></li>
+                        <li><a href="#footer">CONTACT INFO</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li>
+                            <a href="https://www.instagram.com/oriramonphotos/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </menu>
+
+    <!-- main content -->
+    <main>
+        <div class="row"> 
+            <div class="column">
+                <img src="images/landdriving.jpg" loading="lazy" onclick="openFullscreen(this, 0)"> 
+                <img src="images/ORRM7618.jpg" loading="lazy" onclick="openFullscreen(this, 1)">             
+                <img src="images/new4.jpg" loading="lazy" onclick="openFullscreen(this, 2)">
+                <img src="images/B0B3718-R1-01-33A.jpg" loading="lazy" onclick="openFullscreen(this, 3)">
+                <img src="images/ORRM8435.jpg" loading="lazy" onclick="openFullscreen(this, 4)">
+                <img src="images/ORRM0941.jpg" loading="lazy" onclick="openFullscreen(this, 5)">
+                <img src="images/ORRM9738.jpg" loading="lazy" onclick="openFullscreen(this, 6)"> 
+                <img src="images/B0B3718-R1-16-16A.jpg" loading="lazy" onclick="openFullscreen(this, 7)">
+                <img src="images/new1.jpg" loading="lazy" onclick="openFullscreen(this, 8)">
+                <img src="images/Ramon5248.jpg" loading="lazy" onclick="openFullscreen(this, 9)">
+                <img src="images/portfolio1.jpg" loading="lazy" onclick="openFullscreen(this, 10)">
+                <img src="images/DSC_2900.jpg" loading="lazy" onclick="openFullscreen(this, 11)">   
+                <img src="images/Ramon5165.jpg" loading="lazy" onclick="openFullscreen(this, 12)">  
+            </div> 
+            <div class="column">
+                <img src="images/prevworkbk.jpg" loading="lazy" onclick="openFullscreen(this, 13)">
+                <img src="images/portfolio3.jpg" loading="lazy" onclick="openFullscreen(this, 14)">
+                <img src="images/ORRM0041.jpg" loading="lazy" onclick="openFullscreen(this, 15)">
+                <img src="images/new5.jpg" loading="lazy" onclick="openFullscreen(this, 16)">
+                <img src="images/ORRM9671.jpg" loading="lazy" onclick="openFullscreen(this, 17)">
+                <img src="images/ORRM3770.jpg" loading="lazy" onclick="openFullscreen(this, 18)">
+                <img src="images/ORRM6266.jpg" loading="lazy" onclick="openFullscreen(this, 19)">
+                <img src="images/ORRM0311.jpg" loading="lazy" onclick="openFullscreen(this, 20)">
+                <img src="images/DSC_3849.jpg" loading="lazy" onclick="openFullscreen(this, 21)">
+                <img src="images/Ramon5521.jpg" loading="lazy" onclick="openFullscreen(this, 22)">
+                <img src="images/ORRM0598.jpg" loading="lazy" onclick="openFullscreen(this, 23)">  
+                <img src="images/Ramon9818.jpg" loading="lazy" onclick="openFullscreen(this, 24)">
+                <img src="images/Ramon4.jpg" loading="lazy" onclick="openFullscreen(this, 25)">
+            </div> 
+            <div class="column">
+                <img src="images/portfolio4.jpg" loading="lazy" onclick="openFullscreen(this, 26)">
+                <img src="images/ORRM9746.jpg" loading="lazy" onclick="openFullscreen(this, 27)">
+                <img src="images/portfolio2.jpg" loading="lazy" onclick="openFullscreen(this, 28)">
+                <img src="images/ORRM9069.jpg" loading="lazy" onclick="openFullscreen(this, 29)">
+                <img src="images/DSC_3066.jpg" loading="lazy" onclick="openFullscreen(this, 30)">  
+                <img src="images/new3.jpg" loading="lazy" onclick="openFullscreen(this, 31)">
+                <img src="images/ORRM1488-2.jpg" loading="lazy" onclick="openFullscreen(this, 32)">
+                <img src="images/ORRM1347.jpg" loading="lazy" onclick="openFullscreen(this, 33)">
+                <img src="images/ORRM3918.jpg" loading="lazy" onclick="openFullscreen(this, 34)">
+                <img src="images/Ramon6077.jpg" loading="lazy" onclick="openFullscreen(this, 35)">
+                <img src="images/Ramon89580019.jpg" loading="lazy" onclick="openFullscreen(this, 36)">
+                <img src="images/ORRM6797.jpg" loading="lazy" onclick="openFullscreen(this, 37)">   
+                <img src="images/Ramon1392.jpg" loading="lazy" onclick="openFullscreen(this, 38)">   
+            </div> 
+        </div>
+    </main>
+    <!-- end of main content -->
+    
+    <!-- Full-screen image container -->
+    <div id="fullscreenContainer" class="fullscreen-container" onclick="closeFullscreen(event)">
+        <span class="close" onclick="closeFullscreen(event)">&times;</span>
+        <span class="prev" onclick="changeImage(event, -1)">&#10094;</span>
+        <span class="next" onclick="changeImage(event, 1)">&#10095;</span>
+        <img id="fullscreenImage" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="py-7">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>ORI RAMON</h3>
+                </div>
+                <div>
+                    <ul class="flex">
+                        <li><p class="lead"><i class="fas fa-phone-alt"></i> +972-52-4422-093</p></li>
+                        <li><p class="lead"><i class="fas fa-envelope"></i> oriramon@gmail.com</p></li>
+                        <li>
+                            <a href="https://www.instagram.com/oriramonphotos/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- typewriting js -->
+    <script src="typewriting-master/typewriting.js"></script>
+    <!-- link to JavaScript file -->
+    <script src="typewriting-master/jvscrpt.js"></script>
+</body>
+</html>
